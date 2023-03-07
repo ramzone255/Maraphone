@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfApp2.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainPage.xaml
+    /// Логика взаимодействия для IWantToBeRunnerPage.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class IWantToBeRunnerPage : Page
     {
-        public MainPage()
+        public IWantToBeRunnerPage()
         {
             InitializeComponent();
         }
@@ -29,9 +29,13 @@ namespace WpfApp2.Pages
         {
             NavigationService.Navigate(new LoginPage());
         }
-        private void IWantToBeRunner(object sender, RoutedEventArgs e)
+        private void Log_In(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new IWantToBeRunnerPage());
+            NavigationService.Navigate(new LoginPage());
+        }
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainPage());
         }
     }
 }

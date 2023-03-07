@@ -42,7 +42,8 @@
                     Margin="0,20,0,0"
                     Content="Я хочу стать бегуном"
                     FontSize="22"
-                    Foreground="#525252"/>
+                    Foreground="#525252"
+                    Click="IWantToBeRunner"/>
             <Button Style="{StaticResource RoundButtonTemplate}"
                     Width="350"
                     Height="60"
