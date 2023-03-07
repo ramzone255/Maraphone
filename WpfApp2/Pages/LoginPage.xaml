@@ -81,9 +81,44 @@
                        Margin="0,-30,395,0"
                        Foreground="#474747"/>
             <TextBox Text="Enter your email address"
+                     FontSize="25"
                      Foreground="DarkGray"
                      Height="40"
-                     />
+                     Width="400"
+                     BorderBrush="Black"
+                     BorderThickness="2"
+                     Name="Email"
+                     Margin="150,-225,0,0"
+                     GotFocus="EmailBox"/>
+            <TextBox Text="Enter your password"
+                     TextWrapping="Wrap"
+                     FontSize="25"
+                     Foreground="DarkGray"
+                     Height="40"
+                     Width="400"
+                     Name="Password"
+                     BorderBrush="Black"
+                     BorderThickness="2"
+                     Margin="150,-125,0,0"
+                     GotFocus="PasswordBox"/>
+            <Button Style="{StaticResource RoundButtonTemplate}"
+                    Width="140"
+                    Height="40"
+                    Margin="0,-25,100,0"
+                    Content="Login"
+                    FontSize="22"
+                    Foreground="#525252"
+                    x:Name="Login"
+                    Click="Login_Click"/>
+            <Button Style="{StaticResource RoundButtonTemplate}"
+                    Width="140"
+                    Height="40"
+                    Margin="210,-40,0,0"
+                    Content="Cancel"
+                    FontSize="22"
+                    Foreground="#525252"
+                    x:Name="Cancel"
+                    Click="Cancel_Click"/>
         </StackPanel>
     </Grid>
 </Page>

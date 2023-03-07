@@ -29,5 +29,29 @@ namespace WpfApp2.Pages
         {
             NavigationService.Navigate(new MainPage());
         }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainPage());
+        }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        public void PasswordBox(object sender, RoutedEventArgs e)
+         {
+               TextBox tb = (TextBox)sender;
+               tb.Text = string.Empty;
+               tb.GotFocus -= PasswordBox;
+         }
+
+        public void EmailBox(object sender, RoutedEventArgs e)
+        {
+            TextBox tb = (TextBox)sender;
+            tb.Text = string.Empty;
+            tb.GotFocus -= EmailBox;
+        }
     }
 }
