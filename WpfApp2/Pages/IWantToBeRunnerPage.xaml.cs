@@ -37,5 +37,10 @@ namespace WpfApp2.Pages
         {
             NavigationService.Navigate(new MainPage());
         }
+
+        private void Rigistration_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new RegistrationPage());
+        }
     }
 }

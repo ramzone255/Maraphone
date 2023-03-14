@@ -27,12 +27,12 @@ namespace WpfApp2.Pages
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new MainPage());
+            NavigationService.Navigate(new IWantToBeRunnerPage());
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new MainPage());
+            NavigationService.Navigate(new IWantToBeRunnerPage());
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
