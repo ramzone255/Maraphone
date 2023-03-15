@@ -10,9 +10,9 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="410"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="430"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="2" Background="#525252">
             <TextBlock Text="18 дней 8 часов и 17 минут до старта марафона!"
@@ -39,7 +39,71 @@
                        Foreground="White"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Background="White">
-            
+            <TextBlock VerticalAlignment="Top"
+                       HorizontalAlignment="Center"
+                       Height="50"
+                       Width="400"
+                       Text="Регистрация бегуна"
+                       TextAlignment="Center"
+                       FontSize="35"
+                       Margin="0,0,0,0"
+                       Foreground="#474747"/>
+            <TextBlock
+                       HorizontalAlignment="Center"
+                       Height="30"
+                       Width="750"
+                       Text="Пожалуйста, заполните всю информацию, чтобы зарегестрироваться"
+                       TextAlignment="Center"
+                       FontSize="22"
+                       Margin="0,00,0,0"
+                       Foreground="#474747"/>
+            <TextBlock
+                       HorizontalAlignment="Center"
+                       Height="30"
+                       Width="750"
+                       Text="в качестве бегуна"
+                       TextAlignment="Center"
+                       FontSize="22"
+                       Margin="0,00,0,0"
+                       Foreground="#474747"/>
+            <TextBlock
+                       Height="30"
+                       Width="70"
+                       Text="Email:"
+                       TextAlignment="Center"
+                       FontSize="25"
+                       Margin="0,5,520,0"
+                       Foreground="#474747"/>
+            <TextBox Text="Email"
+                     FontSize="25"
+                     Foreground="DarkGray"
+                     Height="40"
+                     Width="300"
+                     BorderBrush="Black"
+                     BorderThickness="2"
+                     Name="Email"
+                     Margin="0,-30,140,0"
+                     GotFocus="EmailBox"
+                     FontStyle="Italic"/>
+            <TextBlock
+                       Height="30"
+                       Width="90"
+                       Text="Пароль:"
+                       TextAlignment="Center"
+                       FontSize="25"
+                       Margin="0,5,550,0"
+                       Foreground="#474747"/>
+            <TextBox Text="Пароль"
+                     FontSize="25"
+                     Foreground="DarkGray"
+                     Height="40"
+                     Width="250"
+                     BorderBrush="Black"
+                     BorderThickness="2"
+                     Name="Password"
+                     Margin="0,-30,190,0"
+                     GotFocus="PasswordBox"
+                     FontStyle="Italic"/>
         </StackPanel>
     </Grid>
 </Page>
